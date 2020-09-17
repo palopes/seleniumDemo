@@ -1,0 +1,146 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10432466500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefinitions.setScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Open and closing portal",
+        "description": "",
+        "id": "demo-selenium-tests;open-and-closing-portal",
+        "after": [
+          {
+            "result": {
+              "duration": 281600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommomHooks.failureTestProcedures(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 42108865300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "open SeleniumEasy portal",
+            "match": {
+              "location": "CommonStepDefinitions.open_SeleniumEasy_portal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 176058700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i close publicity popup",
+            "match": {
+              "location": "CommonStepDefinitions.i_close_publicity_popup()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 169094400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i click on the top menu \"Input forms\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Input forms",
+                  "offset": 25
+                }
+              ],
+              "location": "CommonStepDefinitions.i_click_on_the_top_menu(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2886290000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "select on sub menu \"Simple Form Demo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Simple Form Demo",
+                  "offset": 20
+                }
+              ],
+              "location": "CommonStepDefinitions.select_on_sub_menu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 796267600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i insert \"Hello world!\" on single input field example",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello world!",
+                  "offset": 10
+                }
+              ],
+              "location": "CommonStepDefinitions.i_insert_on_single_input_field_example(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181008700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i press the button \"Show Message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Show Message",
+                  "offset": 20
+                }
+              ],
+              "location": "CommonStepDefinitions.i_press_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@SD-0001"
+          }
+        ]
+      }
+    ],
+    "name": "Demo Selenium Tests",
+    "description": "This file is the container of the scenarios for SeleniumEasy portal",
+    "id": "demo-selenium-tests",
+    "keyword": "Feature",
+    "uri": "DemoSeleniumTests.feature"
+  }
+]

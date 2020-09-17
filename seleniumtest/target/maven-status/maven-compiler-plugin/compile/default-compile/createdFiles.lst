@@ -1,0 +1,9 @@
+be\ap\config\ConfigFileReader.class
+be\ap\selenium\stepdefinitions\common\CommomHooks.class
+com\everis\selenium\RemoteSeleniumTest.class
+be\ap\utils\Utils.class
+be\ap\config\SecurityUtils.class
+be\ap\selenium\stepdefinitions\common\CommonStepDefinitions.class
+be\ap\config\SecurityUtilsTest.class
+be\ap\config\SecurityException.class
+com\everis\selenium\CommonRegression.class
