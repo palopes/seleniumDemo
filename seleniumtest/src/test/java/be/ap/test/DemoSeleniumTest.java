@@ -9,5 +9,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 public class DemoSeleniumTest extends AbstractTestNGCucumberTests {
 
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
 
 }

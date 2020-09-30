@@ -24,6 +24,8 @@ public class CommonRegression {
 
 	private static WebDriver driver = null;
 	private static WebDriverWait wait = null;
+	private static RemoteWebDriver remoteWebDriver = null;
+
 	private static boolean closed=false;
 
 	private static final ConfigFileReader configFileReader = new ConfigFileReader();
@@ -68,6 +70,19 @@ public class CommonRegression {
 		return driver;
 	}
 
+	@Parameters({"Port"})
+	@BeforeClass
+	public void initiateRemoteDriver(String Port) throws MalformedURLException {
+		if(Port.equalsIgnoreCase("9001"))
+		{
+			driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.chrome());
+			driver.manage().window().maximize();
+		}
+		else if(Port.equalsIgnoreCase("9002")){
+			driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.firefox());
+			driver.manage().window().maximize();
+		}
+	}
 
 
 
