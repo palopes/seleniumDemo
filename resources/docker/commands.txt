@@ -1,0 +1,10 @@
+#Docker commands
+docker ps -a
+docker-compose -f docker-compose.yml up -d
+docker-compose -f docker-compose.yml down
+
+#Maven run
+mvn clean test -Dsurefire.suiteXmlFiles=Testng.xml
+
+
+
